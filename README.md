@@ -44,6 +44,9 @@ The P4-NSMQ project aims to bridge this gap by providing all senior high student
     ```
 
 ## Running the Application
-  If all setup is done properly, then to run the application, just call ```python app.py```
+  If all setup is done properly, then to run the application, just call 
+  ```bash
+  python app.py
+  ```
   And the flask server should start and give you the url like(127.0.0.1:5000). 
   Get this url in the browser and you are good to go.
