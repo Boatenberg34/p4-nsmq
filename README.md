@@ -10,6 +10,8 @@
 The National Science and Maths Quiz (NSMQ) is a prestigious competition that tests the knowledge and analytical skills of senior high school students in Ghana. However, access to adequate learning materials and experienced teachers varies widely across schools, often leaving students in less prominent institutions at a disadvantage. This disparity hinders many talented and passionate students from participating and excelling in the NSMQ.
 The P4-NSMQ project aims to bridge this gap by providing all senior high students with equal access to essential materials and guidance through an AI-powered tool. This report details the problem, the proposed solution, and the anticipated impact of the P4-NSMQ project.
 
+- **Note:** This project is not fully functionable yet. We hope to CD the project if permission is given.
+  
 ## Technicals and setup
 1. **Clone the Repository:**
 
