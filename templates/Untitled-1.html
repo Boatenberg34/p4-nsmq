@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Are you ready?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .start-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .cancel-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Are you ready to take the quiz?</h1>
+        <button class="start-btn" onclick="startQuiz()">Yes, I'm ready!</button>
+        <button class="cancel-btn" onclick="cancelQuiz()">No, maybe later.</button>
+    </div>
+
+    <script>
+        function startQuiz() {
+            alert("Great! Let's get started.");
+        }
+
+        function cancelQuiz() {
+            alert("No problem! Come back when you're ready.");
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Quiz Prompt</title>
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        } */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            color: black;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .modal-content h1 {
+            margin-bottom: 20px;
+            color: black;
+        }
+        .modal-content button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 10px;
+        }
+        .modal-content .yes-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .modal-content .no-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal" id="quizPromptModal">
+        <div class="modal-content">
+            <h1>Take the Quiz</h1>
+            <p>Are you ready to take the quiz?</p>
+            <button class="yes-btn" onclick="startQuiz()">Yes</button>
+            <button class="no-btn" onclick="closeModal()">No</button>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("quizPromptModal");
+
+        // Function to open the modal
+        function openModal() {
+            modal.style.display = "block";
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Function to start quiz (called when "Yes" button is clicked)
+        function startQuiz() {
+            closeModal();
+            alert("Great! Let's get started.");
+            // Redirect to quiz page or start the quiz
+            window.location.href = '/quiz'; // Replace with your quiz URL
+        }
+
+        // Optional: Add logic for what happens when "No" button is clicked
+    </script>
+
+    <!-- Trigger the modal -->
+    <button onclick="openModal()">Start Quiz</button>
+</body>
+</html>
+

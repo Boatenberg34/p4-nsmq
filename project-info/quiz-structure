@@ -1,0 +1,13 @@
+Quiz Structure
+
+Three schools compete in each contest and each school is represented by two contestants. The current quiz mistress is Dr. Elsie Effah Kaufmann. Presently, every contest is composed of five rounds with the following rules:
+
+Round 1 — The round of fundamental questions. Each contesting school has to answer 4 Biology, 4 Chemistry, 4 Physics and 4 Mathematics questions. A wrongly answered question may be carried over as a bonus. Partial credit is sometimes awarded by the quiz mistress.
+
+Round 2 — This round is called the speed race. All three schools are presented with the same mainly applied questions at the same time. A school answers a question by ringing the bell. There are no partial credits at this stage and a school gains a maximum of three points for answering a question correctly.
+
+Round 3 — This round is known as the Problem of the Day. The contestants are required to solve a single question, worth 10 points, within 4 minutes.
+
+Round 4 — True or False statements are given to the contestants in turns. The objective is to determine whether each statement is true or false. A correctly answered question fetches 2 points. A wrongly answered question attracts a penalty of -1 point. One may decide not to answer a question, in which case it will be carried over to the next contesting school as a bonus for the full benefit of the two points.
+
+Round 5 — Riddles; clues are given to the contesting schools. The schools compete against each other to find the answers to the riddles. Getting the correct answer on the first clue fetches 5 points. On the second clue, 4 points are awarded for a correct answer. On the third or any other subsequent clue, a question answered correctly is given 3 points. There are 4 riddles in all.

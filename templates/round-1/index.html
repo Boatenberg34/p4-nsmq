@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Round 1 | P4 NSMQ</title>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Boatenberg"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <!-- templates -->
+         <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"/>
+
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"/>
+
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/x-icon">
+
+        <link rel="favicon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/x-icon">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'/>
+    </head>
+<body id="modal">
+    <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+           <!-- Logo and responsive toggle -->
+           <div class="navbar-header" id="navbar-ul">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"> 
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="/">
+                    <div id="header-title">
+                        <!-- <span>
+                            <img id="logo-image" src="images/logo.jpeg" alt="Logo" width="50px" height="auto">
+                        </span> -->
+                        <span id="text">
+                            <span id="p">P4</span> NSMQ
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right" id="navbar-ul">
+                    <li>
+                        <a href="/"><b>Home</b></a>
+                    </li>
+                    <li>
+                        <a href="/study/"><b>Study</b></a>
+                    </li>
+                    <li class="active">
+                        <a href="/practice/"><b>Practice</b></a>
+                    </li>
+                    <li>
+                        <a href="/rules/"><b>Rules</b></a>
+                    </li>
+                    <li>
+                        <a href="/about-nsmq/"><b>About NSMQ</b></a>
+                    </li>      
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+    <div id="initializer">
+        <button onclick="openModal()">Start Quiz</button>
+    </div>
+    <div class="modal" id="quizPromptModal">
+        <div class="modal-content">
+            <h4>Are you ready to take the quiz?</h4>
+            <button class="yes-btn" onclick="startTheQuiz()">Yes</button>
+            <button class="no-btn" onclick="closeModal()">No</button>
+        </div>
+    </div>
+
+    <main id="quizRoundPage"><br><br><br><br>
+       <h1 class="round-head">Round 1</h1>
+       <div class="round-info">
+           <h2 class="round-name">The Fundamentals</h2>
+           <div class="small-info">
+               <p class="time">Time <br><span id="timer">00:10s</span></p>
+               <audio id="alarmAudio" src="{{ url_for('static', filename='alarm.mp3') }}" preload="auto"></audio>
+               <p class="scores">Points <br><span class="points">0</span></p>
+           </div>
+       </div>
+
+       <h3 id="quest-title">Question <span id="question_number">1</span></h3>
+       <div id="question_div">
+            Question displays here.
+       </div>
+
+       <div class="answer-button">
+           <button id="start-btn" onclick="startCountdown(10)">Answer</button>
+        </div>
+        <p class="answering-info">Click and say the answer to the question.</p>
+
+        <div class="round-footer">
+            <p class="questions-type"><span class="course">Physics</span></p>
+            <p class="questions-remaining"><span class="answered">0</span>/16 Questions</p>
+        </div>
+    </main>
+
+    <footer id="round-footer">
+        <div class="developers">
+            <hr>
+            <h3>Developed with love by the BEGood Team, as a Hackathon Project for equalizing the National Science and Maths Quiz Competition.  <br>And also, promoting the capabilities of Brilla AI and it's future advancements.</h3>
+        </div>   
+        <div class="copy">
+            <p>&copy; P4-NSMQ - BEGood (Boateng-Emmanuel Good) Team</p>
+            <p>a <u>Kwabena Boateng</u> and <u>Sam Emmanuel </u> Production</p>
+            <p>Proud interns @ <b>Vandzilah Technologies</b>.</p>
+        </div>
+    </footer>
+</body>
+     <!-- jQuery -->
+    <script src="{{url_for('static', filename='js/jquery-1.11.3.min.js')}}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{url_for('static', filename='js/jquery.easing.min.js')}}"></script>
+ 
+  <!-- Custom Javascript -->
+    <script src="{{url_for('static', filename='js/custom.js')}}"></script>
+
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</html>
