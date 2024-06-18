@@ -1,0 +1,653 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+/* Navigation Style */
+#siteNav{
+    height: 66px; 
+    background-color: rgba(216, 18, 48, 0.935); 
+    padding: 5px 0 5px 0;
+}
+#navbar #navbar-ul{
+    background-color: rgb(255, 255, 255); 
+    padding: 4px;
+}
+div#navbar.navbar-collapse.collapse.in{
+    margin-top: 5px;
+}
+/* a.navbar-brand{
+    padding: -4px;
+} */
+button.navbar-toggle{
+    background-color: rgb(255, 255, 255);
+}
+div#navbar ul#navbar-ul li.active{
+    background-color: rgb(13, 13, 209);
+}
+div#navbar ul#navbar-ul li a{
+    font-size: 18px;
+    color: black;
+}
+
+div#navbar ul#navbar-ul li:hover{
+    color: white;
+    background-color: rgb(255, 159, 159);
+}
+.navbar-default {
+    border-color: rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+#header-title{
+    background-color: rgb(20, 67, 221); 
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    padding: 15px 10px 15px 10px;
+    margin: -16px 0 0 -5px;
+}
+#header-title:hover{
+    background-color: rgb(255, 255, 255); 
+    color: rgb(20, 67, 221);
+}
+#p{
+    border: 2px solid;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 1px 6px 0 6px;
+}
+#p:hover{
+    border: 2px solid rgb(20, 67, 221);
+}
+/* header styles */
+header.header{
+    margin-right: -3px;
+    position: block;
+    width: 100%;
+	height: 400px;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.header.index{
+    background-image: url('../images/presec-wins.png');
+}
+.header.study{
+    background-image: url('../images/prempeh.png');
+}
+.header.practice{
+    background-image: url('../images/quizz-hall.png');
+}
+.header.rules{
+    background-image: url('../images/trophy.jpg');
+}
+.header.about{
+    background-image: url('../images/dr-elsie.jpg');
+}
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+body{
+    background-color: rgba(37, 26, 26, 0.933);
+    color: white;
+    margin: 0;
+}
+main{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+main .what, .how-practice{
+    text-align: center;
+}
+/* items on the home page style */
+.items{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: static;
+}
+@media screen and (min-width: 830px) and (max-width: 1200px){
+    .items{
+        justify-content: left;
+    }
+}
+
+.items a button{
+    width: 390px;
+    height: 120px;
+    margin: 20px 10px 0 10px;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+    padding: 0 10px 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(85, 123, 219);
+}
+.items a button:hover{
+    color: rgb(85, 123, 219);
+    background-color: rgb(255, 255, 255);
+}
+
+/* study items style */
+.items.study a button{
+    color: rgb(2, 65, 202);
+    background-color: rgb(255, 255, 255);
+}
+.items.study a button p{
+    width: 350px;
+}
+.items.study a button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 65, 202);
+}
+.items.rounds a button{
+    padding: 0 40px;
+    color: rgb(0, 59, 221);
+    background-color: rgb(255, 255, 255);
+}
+.items.rounds a button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 59, 221);
+}
+
+/* blog style */
+.blogs{
+    width: 100%;
+    height: auto;
+    margin: 0 0 0 10px;
+    align-items: center;
+    justify-content: center;
+}
+.blogs .blog-alert{
+    display: block;
+    text-decoration: underline;
+    text-align: center;
+    margin: 0 0 10px 20px;
+}
+.blogs .all-blogs{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.blogs .blog-alert, .all-blogs{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.blogs a{
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 20px 60px 0;
+}
+.blogs a:hover{
+    background-color: rgba(61, 59, 88, 0.979);
+}
+.blogs a .ind-blogs{
+    height: auto;
+    min-height: 500px;
+}
+.blogs .ind-blogs img{
+    width: 390px;
+    height: 280px;
+    border-radius: 10px;
+}
+.blogs .blog-head{
+    width: 390px;
+    font-size: 20px;
+    margin: 0;
+    padding: 20px 2px;
+}
+.blogs .blog-text{
+    width: 390px;
+    font-size: 14px;
+    height: 100px;
+    text-align: justify;
+}
+
+.blogs .blog-details{
+    width: 390px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.blogs .blog-details.red{
+    border-bottom: 3px solid rgba(213, 62, 115, 0.863);
+}
+.blogs .blog-details.white{
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+.blogs .blog-details.blue{
+    border-bottom: 3px solid rgb(100, 100, 200);
+}
+
+/* Round Styles */
+@media screen and (min-width: 768px) and (max-width: 1920px){
+    main{
+        padding: 0 50px 0 50px;
+        scrollbar-color: red;
+    }
+    .question{
+        padding: 0 0px 0 0px;
+    }
+    h3#quest-title{
+        width: 90%;
+        margin: 0 60px;
+    }
+}
+.round-head{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.round-info{
+    text-align: center;
+    font-size: 13px;
+    padding: 30px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.round-info h2{
+    font-size: 20px;
+    margin-top: -1px;
+}
+.round-info p{
+    font-size: 18px;
+    /* float: right; */
+}
+.round-info p span{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.round-info .small-info{
+    font-weight: bolder;
+    /* width: 50%; */
+    float: right;
+    padding: 0 20px;
+    display: inline-flex;
+}
+.round-info .small-info p{
+    margin: 0 20px;
+    float: right;
+    letter-spacing: 1px;
+}
+main #quest-title{
+    font-size: 20px;
+    border-bottom: 1px solid;
+    margin: 0 50px;
+}
+#question_div{
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px 50px 50px;
+}
+.answer-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.answer-button button{
+    background-color: rgb(48, 48, 212);
+    padding: 10px;
+    margin: 30px 0;
+    width: 40%;
+    height: 60px;
+    font-size: 23px;
+    border: none;
+    border-radius: 10px;
+}
+.answer-button button:hover{
+    background-color: rgb(88, 88, 235);
+}
+.answering-info{
+    text-align: center;
+    margin: 0 10px;
+    font-size: large;
+}
+.round-footer{
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin: 40px 0 0 0;
+    padding: 0 20px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+/* footer style */
+footer{
+    position: relative;
+    margin: 50px 0 50px 0;
+    padding: 20px;
+    justify-content: center;
+}
+.developers h3{
+    text-align: center;
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    line-height: 2;
+}
+.copy{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+#initializer{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#initializer button{
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+    width: 60%;
+    height: 80px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#initializer button:hover{
+    background-color: #d3d1f5;
+}
+
+#modal {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1a1a;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.modal-content h4 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+.modal-content button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+}
+.modal-content .yes-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+.modal-content .no-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+/* mobile device styles */
+@media screen and (min-width: 250px) and (max-width: 480px){
+    #siteNav{
+        height: 66px; 
+        background-color: rgba(216, 18, 48, 0.935); 
+        padding: 5px 0 5px 0;
+    }
+    body{
+        color: white;
+        margin: 0;
+    }
+    main .what, .how-practice{
+        margin-left: 15px;
+        text-align: left;
+        font-size: 24px;
+    }
+    .items a button{
+        width: 300px;
+        padding: 15px;
+        height: 120px;
+    }
+
+    /* study items style */
+    .items.study a button{
+        color: rgb(2, 65, 202);
+        padding: 20px;
+    }
+    .items.study a button h2{
+        margin: -10px 10px 0 0;
+    }
+    .items.study a button p{
+        margin: 3px 3px 0 0;
+        width: 250px;
+    }
+
+    /* practice items style */
+    .items.practice a button h2{
+        margin: -10px 10px 0 0;
+    }
+    .items.practice a button p{
+        margin: 0;
+        width: 275px;
+    }
+
+    /* rounds items style */
+    .items.rounds a button{
+        color: rgb(0, 59, 221);
+        background-color: rgb(255, 255, 255);
+        padding: 30px;
+        margin: 10px;
+    }
+    .items.rounds a button h2{
+        margin: -1px 0 3px 0;
+    }
+
+    
+    /* blog style */
+    .blogs{
+        width: 95%;
+        position: relative;
+        justify-content: center;
+    }
+    .blogs .blog-alert{
+        text-decoration: underline;
+        font-size: 24px;
+        text-align: left;
+        width: 95%;
+        margin: 0 0 10px 0;
+    }
+    .blogs .all-blogs{
+        justify-content: center;
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 10px;
+    }
+    .blogs .blog-alert, .all-blogs{
+        position: relative;
+    }
+    .blogs .ind-blogs{
+        position: relative;
+        margin: 20px 20px 60px 0;
+        width: 340px;
+        justify-content: center;
+    }
+    .blogs .ind-blogs img{
+        position: relative;
+        width: 340px;
+        height: 240px;
+        border-radius: 10px;
+        margin: 0px;
+    }
+    .blogs .blog-head{
+        width: 340px;
+        font-size: 20px;
+        margin: 0;
+        padding: 20px 2px;
+    }
+    .blogs .blog-text{
+        margin: 0 0 3px 0;
+        width: 340px;
+        font-size: 14px;
+        height: 100px;
+        text-align: justify;
+    }
+    
+    .blogs .blog-details{
+        width: 340px;
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 14px;
+        font-weight: lighter;
+    }
+    .blogs .blog-details.red{
+        border-bottom: 3px solid rgba(213, 62, 115, 0.863);
+    }
+    .blogs .blog-details.white{
+        border-bottom: 3px solid rgb(255, 255, 255);
+    }
+    .blogs .blog-details.blue{
+        border-bottom: 3px solid rgb(100, 100, 200);
+    }
+    
+    /* Round Styles */
+    .round-head{
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+    .round-info{
+        text-align: left;
+        font-size: 13px;
+        padding: 30px 30px 30px 10px;
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .round-info h2{
+        font-size: 20px;
+        line-height: 1.3;
+        margin-top: -1px;
+    }
+    .round-info p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .round-info p span{
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .round-info .small-info{
+        display: inline-flex;
+        font-weight: bolder;
+        margin-left: 20px;
+        padding: 0 0;
+    }
+    .round-info .small-info p{
+        margin: 0 10px;
+        letter-spacing: 1px;
+    }
+    main #quest-title{
+        font-size: 20px;
+        border-bottom: 1px solid;
+        margin: 0 20px;
+    }
+    .question{
+        text-align: left;
+        width: 100%;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        padding: 0 20px 50px 20px;
+    }
+    
+    .answer-button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .answer-button button{
+        background-color: rgb(48, 48, 212);
+        padding: 10px;
+        margin: 30px 0;
+        width: 40%;
+        height: 60px;
+        font-size: 23px;
+        border: none;
+        border-radius: 10px;
+    }
+    .answer-button button:hover{
+        background-color: rgb(88, 88, 235);
+    }
+    .answering-info{
+        text-align: center;
+        font-size: large;
+    }
+    .round-footer{
+        letter-spacing: 1px;
+        font-size: 18px;
+        margin: 20px 0 0 0;
+        padding: 0 10px;
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    
+    /* footer style */
+    footer{
+        position: relative;
+        margin: 30px 0 30px 0;
+        padding: 10px;
+        justify-content: center;
+    }
+    .developers h3{
+        text-align: center;
+        font-size: 14px;
+        margin: 0 0 20px 0;
+        line-height: 1.5;
+    }
+    .copy{
+        font-size: 12px;
+        text-align: center;
+        margin: 20px 0 20px 0;
+    }
+}

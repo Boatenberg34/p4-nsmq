@@ -1,0 +1,232 @@
+<!------------------------------------------
+#    __                __   __ __   __     # 
+#   |__| |__| __ |\ | (__  |  |  | |  |    #
+#   |       |    | \|  __) |  |  | |__|    #
+#                                     \    #
+#        By: The BEGood Team (2024)        #
+------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home | P4 NSMQ</title>
+        <meta charset="utf-8"/>
+        <meta name="author" content="BEGood Team"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <!-- links -->
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"/>
+
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"/>
+
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/x-icon">
+
+        <link rel="favicon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/x-icon">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'/>
+    </head>
+<body>
+    <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+           <!-- Logo and responsive toggle -->
+           <div class="navbar-header" id="navbar-ul">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"> 
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="/">
+                    <div id="header-title">
+                        <!-- <span>
+                            <img id="logo-image" src="images/logo.jpeg" alt="Logo" width="50px" height="auto">
+                        </span> -->
+                        <span id="text">
+                            <span id="p">P4</span> NSMQ
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right" id="navbar-ul">
+                    <li class="active pad">
+                        <a href="/"><b>Home</b></a>
+                    </li>
+                    <li>
+                        <a href="study/"><b>Study</b></a>
+                    </li>
+                    <li>
+                        <a href="practice/"><b>Practice</b></a>
+                    </li>
+                    <li>
+                        <a href="rules/"><b>Rules</b></a>
+                    </li>
+                    <li>
+                        <a href="about-nsmq/"><b>About NSMQ</b></a>
+                    </li>      
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header index">
+        <div class="header-content">
+            
+        </div>
+    </header>
+
+    <main>
+        <h2 class="what">What do you want to do?</h2>
+        <div class="items">
+            <a href="/study/">
+                <button>
+                    <h2>Study</h2>
+                    <p>Learn to Prepare for NSMQ</p>
+                </button>
+            </a>
+            <a href="/practice/">
+                <button>
+                    <h2>Practice</h2>
+                    <p>Test yourself with Quizzes in all rounds</p>
+                </button>
+            </a>
+            <a href="/rules/">
+                <button>
+                    <h2>Rules</h2>
+                    <p>Know the Rules of all Quiz rounds</p>
+                </button>
+            </a>
+        </div><br><br><br><br>
+
+        <div class="blogs">
+            <h2 class="blog-alert">NSMQ News</h2>
+            <div class="all-blogs">
+                <a href="">
+                    <div class="ind-blogs">
+                        <img src="static/images/dr-elsie.jpg" alt="">
+                        <h3 class="blog-head">The Autobiography of Miss Elsie Effah Kaufman - The Quiz Mistress.</h3>
+                        <p class="blog-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae provident error, soluta maxime consequatur odit ratione nisi tenetur quod quos facere. Consectetur tempora incidunt magnam pariatur blanditiis debitis quibusdam cum. Read more.....
+                        </p><hr>
+    
+                        <span class="blog-details red">
+                            <p class="author">Kwabena Boateng</p>
+                            <p class="date">31st May, 2024</p>
+                            <p class="views">2.1k views</p>
+                        </span>
+                    </div> 
+                </a>
+
+                <a href="">
+                    <div class="ind-blogs">
+                        <img src="static/images/presec.jpg" alt="">
+                        <h3 class="blog-head">Presbyterian Boys takes the 2022 &amp; 2023 Championship back-to-back.</h3>
+                        <p class="blog-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus impedit quisquam molestiae nihil sapiente mollitia neque error voluptate, repellendus quibusdam eligendi ratione eius totam aliquam tempora id earum quis similique. Read more.....
+                        </p><hr>
+                        <span class="blog-details white">
+                            <p class="author">Sam Emmanuel </p>
+                            <p class="date">31st May, 2024</p>
+                            <p class="views">523 views</p>
+                        </span>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="ind-blogs">
+                        <img src="static/images/presec-wins.webp" alt="">
+                        <h3 class="blog-head">Presec Quiz Boys receives trophy, huge awards and scholarhips.</h3>
+                        <p class="blog-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae provident error, soluta maxime consequatur odit ratione nisi tenetur quod quos facere. Consectetur tempora incidunt magnam pariatur blanditiis debitis quibusdam cum. Read more.....
+                        </p><hr>
+                        <span class="blog-details blue">
+                            <p class="author">Kwabena Boateng</p>
+                            <p class="date">31st May, 2024</p>
+                            <p class="views">341 views</p>
+                        </span>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="ind-blogs">
+                        <img src="static/images/prempeh.png" alt="">
+                        <h3 class="blog-head">The Autobiography of Miss Elsie Effah Kaufman.</h3>
+                        <p class="blog-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae provident error, soluta maxime consequatur odit ratione nisi tenetur quod quos facere. Consectetur tempora incidunt magnam pariatur blanditiis debitis quibusdam cum. Read more.....
+                        </p><hr>
+                        <span class="blog-details red">
+                            <p class="author">Sam Emmanuel </p>
+                            <p class="date">31st May, 2024</p>
+                            <p class="views">895 views</p>
+                        </span>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="ind-blogs">
+                        <img src="static/images/trophy.jpg" alt="">
+                        <h3 class="blog-head">Presec Quiz Boys receives trophy, huge awards and scholarhips.</h3>
+                        <p class="blog-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae provident error, soluta maxime consequatur odit ratione nisi tenetur quod quos facere. Consectetur tempora incidunt magnam pariatur blanditiis debitis quibusdam cum. Read more.....
+                        </p><hr>
+                        <span class="blog-details white">
+                            <p class="author">Kwabena Boateng</p>
+                            <p class="date">31st May, 2024</p>
+                            <p class="views">341 views</p>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="ind-blogs">
+                        <img src="static/images/quizz-hall.png" alt="">
+                        <h3 class="blog-head">The Autobiography of Miss Elsie Effah Kaufman.</h3>
+                        <p class="blog-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae provident error, soluta maxime consequatur odit ratione nisi tenetur quod quos facere. Consectetur tempora incidunt magnam pariatur blanditiis debitis quibusdam cum. Read more.....
+                        </p><hr>
+                        <span class="blog-details blue">
+                            <p class="author">Sam Emmanuel </p>
+                            <p class="date">31st May, 2024</p>
+                            <p class="views">895 views</p>
+                        </span>
+                    </div>
+                </a>
+                
+                <!-- individual blogs divs ends -->
+            </div><!-- all-blogs div ends -->
+        </div><!-- items div ends -->
+    </main>
+
+    <footer>
+        <div class="developers">
+            <hr>
+            <h3>Developed with love by the BEGood Team, as a Hackathon Project for equalizing the National Science and Maths Quiz Competition.  <br>And also, promoting the capabilities of Brilla AI and it's future advancements.</h3>
+        </div>   
+        <div class="copy">
+            <p>&copy; P4-NSMQ - BEGood (Boateng-Emmanuel Good) Team</p>
+            <p>a <u>Kwabena Boateng</u> and <u>Sam Emmanuel </u> Production</p>
+            <p>Proud interns @ <b>Vandzilah Technologies</b>.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{{url_for('static', filename='js/jquery-1.11.3.min.js')}}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{url_for('static', filename='js/jquery.easing.min.js')}}"></script>
+
+    <!-- Custom Javascript -->
+    <script src="{{url_for('static', filename='js/custom.js')}}"></script>
+
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+</html>
