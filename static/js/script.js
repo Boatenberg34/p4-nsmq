@@ -24,6 +24,7 @@ function startTheQuiz() {
     alert("Great! Let's get started.");
     initializer.style.display = "none";
     mainDisplay.style.display = "block";
+    startQuiz();
 }
 
         const questions = [
@@ -109,51 +110,56 @@ function startTheQuiz() {
             }
         ];
 
-        let currentQuestionIndex = 0;
+let currentQuestionIndex = 0;
 
-        function startQuiz() {
-            displayQuestion(currentQuestionIndex);
+function startQuiz() {
+    displayQuestion(currentQuestionIndex);
+}
+
+function displayQuestion(index) {
+    const question = questions[index];
+    const questionNumber = document.getElementById("question_number");
+    questionNumber.innerHTML = `
+    ${index + 1}`;
+    const questionDiv = document.getElementById("question_div");
+    questionDiv.classList.add('question');
+    questionDiv.innerHTML = `<h4>${question.text}</h4>`;
+    // container.appendChild(questionDiv);
+
+    // questionDiv.style.color = "white";
+    document.getElementsByClassName("courseinnerHTML") = `${question.topic}`;
+                
+    document.getElementsByClassName("answeredinnerHTML") = `${index + 1}`;
+                
+    // <button onclick="showAnswer(${inde">Show Answer</button>
+    // <p class="answer" id="answer-${indexstyle="display: none;">${question.answer}</p>
+
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        },
+        options: {
+            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
         }
+    };
 
-        function displayQuestion(index) {  
-            const question = questions[index];
-            
-            const questionNumber = document.getElementById("question_number");
-            questionNumber.innerHTML = `
-            ${index + 1}`;
+    // Ensure MathJax processes the new content
+    MathJax.typesetPromise()
+        .then(() => {
+            console.log('MathJax typesetting complete.');
+        })
+        .catch((err) => console.error('MathJax typesetting failed:', err));
+}
+const typeInto = document.getElementById("type_into");
+typeInto.style.display = "none";
 
-            const questionDiv = document.getElementById("question_div");
-
-            questionDiv.classList.add('question');
-            questionDiv.innerHTML = `
-                <h3>${question.text}</h3>
-
-                <button onclick="showAnswer(${index})">Show Answer</button>
-                <p class="answer" id="answer-${index}" style="display: none;">${question.answer}</p>
-            `;
-            // container.appendChild(questionDiv);
-            
-            document.getElementsByClassName("course").innerHTML = `${question.topic}`;
-
-            document.getElementsByClassName("answered").innerHTML = `${index + 1}`;
-
-            MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']],
-            },
-            options: {
-                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-            }
-        };
-
-            // Ensure MathJax processes the new content
-            MathJax.typesetPromise()
-                .then(() => {
-                    console.log('MathJax typesetting complete.');
-                })
-                .catch((err) => console.error('MathJax typesetting failed:', err));
-        }
+function openInput(){
+    typeInto.style.display = "block";
+}
+function closeInput(){
+    typeInto.style.display = "none";
+}
 
         function showAnswer(index) {
             const answer = document.getElementById(`answer-${index}`);
